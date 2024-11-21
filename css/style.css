@@ -1,0 +1,327 @@
+
+
+html {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif; 
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+.navbar li{
+
+    a {
+        font-family: "Montserrat", sans-serif;
+        color: #ffffff; 
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+    
+    a:visited {
+        color:#ffffff;   
+    }
+
+    a:hover {
+        color: #FF5C00;
+        
+    }
+
+    a:active {
+        color:#ffffff;
+ 
+    }
+
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: end;
+
+    .logo-text-1 {
+        font-family: "Rubik", sans-serif;
+        font-weight: 800;
+        color: #FF5C00;
+    }
+
+    .logo-text-2 {
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+}
+
+.navbar {
+
+    button {
+        border: 1px solid #ffffff;
+        padding: 0.1rem 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 200;
+        border-radius: 0.8rem;
+        background-color: #FF5C00;
+        color: #ffffff;
+        margin-left: 1rem;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        overflow: hidden;
+        transition-duration: 0.3s;
+    }
+
+    button:hover {
+    border: 1px solid #FF5C00;
+    background-color: #ffffff;
+    color: #FF5C00;
+    }
+
+    button:active {
+        border: 1px solid #ffffff;
+        background-color: #722FFF;
+        color: #ffffff;
+    }   
+
+}
+
+
+.hero{
+    background-image: url(../img/landing\ page.png);
+    background-repeat: no-repeat;
+    background-position: 60% 80%; /* from the left of the container and from the top*/
+    background-size: cover;
+    height: 100svh;
+    
+}
+
+
+.text-main {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+
+    h1 {
+        font-family: "Rubik";
+        /* font-size: 48px; */
+        color: #ffffff;
+        font-weight: 800; 
+        text-shadow: 2px 2px 4px rgb(53, 53, 53); /* offset-x | offset-y | blur-radius | color */
+
+    }
+
+    p {
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(14px, 4vw, 24px);
+        color: #ffffff;
+        font-weight: 200;
+
+    }
+
+    button {
+        /* border: 1px solid #ffffff; */
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 0.8rem;
+        background-color: #FF5C00;
+        color: #ffffff;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        transition-duration: 0.3s;
+        border: none;
+    }
+
+    button:hover {
+    /* border: 1px solid #FF5C00; */
+    background-color: #ffffff;
+    color: #FF5C00;
+    }
+
+    button:active {
+        /* border: 1px solid #ffffff; */
+        background-color: #722FFF;
+        color: #ffffff;
+    }   
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.our-team {
+    background-image: url('../img/team-background.jpg');
+    background-size: cover;
+}
+
+
+.communication-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+    .communication-type {
+        max-width: 50%;
+        flex: 1 1 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        width: 50px;
+        min-width: 50px;
+        flex-shrink: 0;
+    }
+}
+
+/* What we offer */
+
+.service {
+
+    padding: 80px 0px;
+    /* height: 80svh; */
+
+    h2 {
+        font-family: "Rubik", sanf-serif;
+        /* font-size: 48px; */
+        color: #4F4F4F;
+        font-weight: 700; 
+        text-shadow: 2px 2px 4px rgb(53, 53, 53); /* offset-x | offset-y | blur-radius | color */
+    }
+
+    p {
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(14px, 4vw, 24px);
+        color: #4F4F4F;
+        font-weight: 400; 
+    }
+
+    .service {
+        p {
+            font-size: clamp(12px, 4vw, 18px)
+
+        }
+    }
+
+    .service-h3 {
+        font-size: clamp(14px, 4vw, 20px);  
+        font-family: "Montserrat", sans-serif;
+        color: #FF5C00;
+        font-weight: 800;
+        padding-left: 10px;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 25px;
+            background-color: #FF5C00;
+            border-radius: 30px;
+            left: 0;
+        }
+    }
+
+    img {
+        width: 110px;
+    }
+}
+
+/* OUR TEAM */
+
+.our-team {
+
+    padding: 40px 0px;
+    /* height: 100svh; */
+
+    h2 {
+        font-family: "Rubik", sanf-serif;
+        /* font-size: 48px; */
+        color: #4F4F4F;
+        font-weight: 700; 
+        text-shadow: 2px 2px 4px rgb(53, 53, 53); /* offset-x | offset-y | blur-radius | color */
+    }
+
+    h3 {
+        font-size: clamp(14px, 4vw, 24px);  
+        font-family: "Montserrat", sans-serif;
+        color: #3d3c3c;
+        font-weight: 400;
+    }
+
+    p {
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(12px, 4vw, 18px);
+        color: #4F4F4F;
+        font-weight: 400; 
+        /* width: 70%; */
+    }
+
+    .employe {
+        background-color: #ffffff;
+        height: 100%;
+        border-radius: 30px;
+        padding: 40px;
+    } 
+
+    img {
+        width: 100%;
+    }
+}
+
+
+
+/* CONTACT */
+
+#contacts {
+
+    padding: 40px 0px;
+    height: 50svh;
+
+    h2 {
+        font-family: "Rubik", sanf-serif;
+        /* font-size: 48px; */
+        color: #4F4F4F;
+        font-weight: 700; 
+        text-shadow: 2px 2px 4px rgb(53, 53, 53); /* offset-x | offset-y | blur-radius | color */
+    }
+
+    p {
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(12px, 4vw, 18px);
+        color: #4F4F4F;
+        font-weight: 400; 
+        margin: 0;
+    }
+
+    .communication-type {
+
+    }
+
+    h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: clamp(12px, 4vw, 16px);
+        color: #4F4F4F;
+        font-weight: 400; 
+    }
+}
+
+@media only screen and (min-width:768px)   {
+
+    .text-main {
+
+        div{
+            width: 50%;
+        }
+
+    }
+} 
