@@ -46,7 +46,6 @@
 }
 
 .navbar {
-
   .button {
     border: 1px solid #ffffff;
     padding: 0.1rem 1.5rem;
@@ -97,7 +96,6 @@
   flex-direction: column;
   justify-content: center;
 
-
   h1 {
     font-family: "Rubik";
     /* font-size: 48px; */
@@ -144,8 +142,6 @@
 img {
   max-width: 100%;
 }
-
-
 
 img {
   width: 50px;
@@ -201,15 +197,13 @@ img {
   }
 }
 
- .service-option {
+.service-option {
   .container {
     display: flex;
     align-items: center;
     padding: 0;
-    
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .service-option {
@@ -241,18 +235,17 @@ img {
   /* height: 100svh; */
 
   background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(172, 153, 232, 1) 28%,
-      rgba(185, 159, 193, 1) 56%,
-      rgba(207, 176, 160, 1) 82%,
-      rgba(236, 224, 218, 1) 100%,
-      rgba(244, 236, 233, 1) 100%
-    );
-
+    180deg,
+    rgb(255, 255, 255) 0%,
+    rgba(172, 153, 232, 1) 28%,
+    rgba(185, 159, 193, 1) 56%,
+    rgba(207, 176, 160, 1) 82%,
+    rgba(236, 224, 218, 1) 100%,
+    rgba(244, 236, 233, 1) 100%
+  );
 
   h2 {
-    font-family: 'Rubik', sanf-serif;
+    font-family: "Rubik", sanf-serif;
     font-size: clamp(32px, 4vw, 42px);
     /* font-size: 48px; */
     color: #ffffff;
@@ -262,13 +255,13 @@ img {
 
   h3 {
     font-size: clamp(14px, 4vw, 24px);
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #3d3c3c;
     font-weight: 400;
   }
 
   p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: clamp(12px, 4vw, 16px);
     color: #4f4f4f;
     font-weight: 400;
@@ -311,56 +304,78 @@ img {
     width: 300px;
   }
 }
-.employes {
-  justify-content: space-between;
-}
+
 
 /* CONTACT */
 
-
 .footer {
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 31%, rgba(230,214,205,1) 64%, rgba(236,224,218,1) 100%);
-  color: #f8f9fa;
-}
+  background: rgb(252, 252, 252);
+  background: linear-gradient(
+    0deg,
+    rgba(252, 252, 252, 1) 5%,
+    rgba(222, 215, 246, 1) 39%,
+    rgba(218, 209, 250, 1) 56%,
+    rgba(236, 224, 218, 1) 92%
+  );
+  font-family: "Montserrat", sans-serif;
+  color: #4f4f4f;
 
-.footer a {
-  color: #f8f9fa;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+  a {
+    color: #4f4f4f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
 
-.footer a:hover {
-  color: #ff7f50;
-}
+  a:hover {
+    color: #ff7f50;
+  }
 
-.footer .form-control {
-  background-color: #495057;
-  color: #f8f9fa;
-  border: none;
-}
+  .form-control {
+    background-color: #ffffff;
+    color: #f8f9fa;
+    border: none;
+  }
 
-.footer .form-control::placeholder {
-  color: #ced4da;
-}
+  .form-control::placeholder {
+    color: #ced4da;
+  }
 
-.footer .form-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 127, 80, 0.25);
-}
+  .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 127, 80, 0.25);
+  }
 
-.footer button {
-  background-color: #ff7f50;
-  border: none;
-  color: white;
-  transition: background-color 0.3s ease;
-}
+  button {
+    background-color: #ff5c00;
+    border: 1px solid #ff5c00;
+    color: white;
+    transition: background-color 0.3s ease;
+    padding: 0.1rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    transition-duration: 0.3s;
+  }
 
-.footer button:hover {
-  background-color: #e56740;
-}
+  button:hover {
+    border: 1px solid #ff5c00;
+    background-color: #ffffff;
+    color: #ff5c00;
+  }
 
-.footer h5 {
-  color: #ff7f50;
+  button:active {
+    border: 1px solid #ffffff;
+    background-color: #722fff;
+    color: #ffffff;
+  }
+
+  h5 {
+    color: #ff5c00;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
 }
 
 /* #contacts {
@@ -399,9 +414,15 @@ img {
     font-weight: 400;
   }
 }
-
-
 } */
+
+@media only screen and (min-width: 1400px) {
+  .our-team container {
+    width: 1400px;
+  }
+  
+}
+
 @media only screen and (min-width: 768px) {
   .text-main {
     div {
@@ -411,9 +432,7 @@ img {
 }
 
 @media only screen and (max-width: 425px) {
-
   .text-main button {
     width: 100%;
   }
-
 }

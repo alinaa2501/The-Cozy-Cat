@@ -1,247 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Cozy Cat</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-
-    <section class="hero">
-        <header class="header">
-            <div class="container px-0"> 
-                <nav class="navbar navbar-expand-md aling-items-center p-0">
-                    <div class="container">
-                        <a href="#" class="navbar-brand">
-                            <img src="/img/logo-no-text.png" alt="logo" width="" height="" class="d-inline-block align-text-top">
-                            <span>
-                                <span class="logo-text-1">The Cozy Cat</span>
-                                <span class="logo-text-2">Cat Hotel</span>
-                            </span>
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#service">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contacts">Contacts</a>
-                        </li>
-                        </ul>
-                    </div>
-                </nav>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="hero" id="home">
+      <header class="header">
+        <div class="container px-0">
+          <nav class="navbar navbar-expand-md aling-items-center p-0">
+            <div class="container">
+              <a href="#" class="navbar-brand">
+                <img
+                  src="/img/logo-no-text.png"
+                  alt="logo"
+                  width=""
+                  height=""
+                  class="d-inline-block align-text-top"
+                />
+                <span>
+                  <span class="logo-text-1">The Cozy Cat</span>
+                  <span class="logo-text-2">Cat Hotel</span>
+                </span>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
             </div>
-        </header>
-        <div class="container text-main">
-            <div>
-                <h1>Again, no one to leave your cat with during your vacation?</h1>
-                <p>Now you don’t need to ask someone to stay with your cat or reschedule your trip to other dates, because you can entrust your pet to our cat hotel The Cozy Cat</p>
-                <button data-bs-toggle="modal" data-bs-target="#exampleModal">Make a reservation</button>
-    
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacts">Contacts</a>
+                </li>
+              </ul>
             </div>
+          </nav>
         </div>
-
-
-
+      </header>
+      <div class="container text-main">
+        <div>
+          <h1>Again, no one to leave your cat with during your vacation?</h1>
+          <p>
+            Now you don’t need to ask someone to stay with your cat or
+            reschedule your trip to other dates, because you can entrust your
+            pet to our cat hotel The Cozy Cat
+          </p>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Make a reservation
+          </button>
+        </div>
+      </div>
     </section>
 
-
-<!-- What we offer-->
-<main>
-        <div class="container service py-sm-1 py-xl-5" id="service">
-            <h2 class="text-center p-4">What we offer</h2>
-            <p class="text-center p-3">Our mission is simple: at a minimum, to provide your pet with the most comfortable conditions during your departure, and, at a maximum, to turn his stay in our hotel into a cat vacation to which he will want to return again and again.</p>
-            <div class="container-service aling-items-center row">
-                <div class="service-option  col-sm-12 col-md-4">
-                    <img src="./img/icon-animal-shelter.png" alt="icon-animal-shelter">
-                    <div class="container">
-                        <div class="line"></div>
-                        <h3 class="py-4 service-h3 m-0">Comfortable conditions</h3>
-                    </div>                    
-                    <p>A 100 m² room with play, rest, dining, and restroom areas, 
-                        plus access to a fenced garden. Limited spots available!</p>
-                </div>
-                <div class="service-option  col-sm-12 col-md-4">
-                    
-                    <img src="./img/icon-pet-food.png" alt="icon-pet-food">
-                    <div class="container">
-                        <div class="line"></div>
-                        <h3 class="py-4 service-h3  m-0">Premium food</h3>
-                    </div>
-                    <p>Premium food tailored to your cat’s needs, with a bonus fish/meat dish twice a week. 
-                        Owner approval required for specific ingredients.</p>
-                </div>
-                <div class="service-option col-sm-12  col-md-4">
-                    <img src="./img/icon-pet-care.png" alt="icon-pet-care">
-                    <div class="container">
-                        <div class="line"></div>
-                        <h3 class="py-4 service-h3  m-0">Good care</h3>
-                    </div>
-                    <p>Cats of various breeds, with two staff always present.
-                        Certificates for health and vaccinations are required before check-in.</p>
-                </div>
+    <!-- What we offer-->
+    <main>
+      <div class="container service py-sm-1 py-xl-5" id="service">
+        <h2 class="text-center p-4">What we offer</h2>
+        <p class="text-center p-3">
+          Our mission is simple: at a minimum, to provide your pet with the most
+          comfortable conditions during your departure, and, at a maximum, to
+          turn his stay in our hotel into a cat vacation to which he will want
+          to return again and again.
+        </p>
+        <div class="container-service aling-items-center row">
+          <div class="service-option col-sm-12 col-md-4">
+            <img
+              src="./img/icon-animal-shelter.png"
+              alt="icon-animal-shelter"
+            />
+            <div class="container">
+              <div class="line"></div>
+              <h3 class="py-4 service-h3 m-0">Comfortable conditions</h3>
             </div>
-        </div>    
-<!-- Our Team -->
-        <section class="our-team" id="team">
-            <div class="container py-sm-1 py-xl-5">
-                <h2 class="text-center p-5">Our team</h2>
-                <div class="employes text-center">
-                        <div class="employe">
-                            <div class="empl-cont-img"><img src="./img/team-Nancy.jpg" alt="Nancy"></div>
-                            <h3 class="py-3">Nancy</h3>
-                            <p>Our main cat lady and hotel owner who is on call 7 days a week.</p>
-                        </div>
-                        <div class="employe">
-                            <div class="empl-cont-img"><img src="./img/team-Olivia.jpg" alt="Olivia"></div>
-                            <h3 class="py-3">Olivia</h3>
-                            <p>Our veterinarian guards the well-being of your pet with 10 years of experience!</p>    
-                        </div>
-                        <div class="employe">
-                            <div class="empl-cont-img"><img src="./img/team-Anna.jpg" alt="Anna"></div>
-                            <h3 class="py-3">Anna</h3>
-                            <p>She is a skilled cat groomer. With her gentle touch and expertise, she makes grooming a stress-free experience for cats.</p>    
-                        </div>
-                        <div class="employe">
-                            <div class="empl-cont-img"><img src="./img/team-Jack.jpg" alt="Jack"></div>
-                            <h3 class="py-3">Jack</h3>
-                            <p>The main “culprit” of the creation of this place and also the guardian of order inside its walls!</p>    
-                        </div>
-                </div>
+            <p>
+              A 100 m² room with play, rest, dining, and restroom areas, plus
+              access to a fenced garden. Limited spots available!
+            </p>
+          </div>
+          <div class="service-option col-sm-12 col-md-4">
+            <img src="./img/icon-pet-food.png" alt="icon-pet-food" />
+            <div class="container">
+              <div class="line"></div>
+              <h3 class="py-4 service-h3 m-0">Premium food</h3>
             </div>
-        </section>
+            <p>
+              Premium food tailored to your cat’s needs, with a bonus fish/meat
+              dish twice a week. Owner approval required for specific
+              ingredients.
+            </p>
+          </div>
+          <div class="service-option col-sm-12 col-md-4">
+            <img src="./img/icon-pet-care.png" alt="icon-pet-care" />
+            <div class="container">
+              <div class="line"></div>
+              <h3 class="py-4 service-h3 m-0">Good care</h3>
+            </div>
+            <p>
+              Cats of various breeds, with two staff always present.
+              Certificates for health and vaccinations are required before
+              check-in.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Our Team -->
+      <section class="our-team" id="team">
+        <div class="container py-sm-1 py-xl-5 px-0">
+          <h2 class="text-center p-5">Our team</h2>
+          <div class="employes text-center">
+            <div class="employe">
+              <div class="empl-cont-img">
+                <img src="./img/team-Nancy.jpg" alt="Nancy" />
+              </div>
+              <h3 class="py-3">Nancy</h3>
+              <p>
+                Our main cat lady and hotel owner who is on call 7 days a week.
+              </p>
+            </div>
+            <div class="employe">
+              <div class="empl-cont-img">
+                <img src="./img/team-Olivia.jpg" alt="Olivia" />
+              </div>
+              <h3 class="py-3">Olivia</h3>
+              <p>
+                Our veterinarian guards the well-being of your pet with 10 years
+                of experience!
+              </p>
+            </div>
+            <div class="employe">
+              <div class="empl-cont-img">
+                <img src="./img/team-Anna.jpg" alt="Anna" />
+              </div>
+              <h3 class="py-3">Anna</h3>
+              <p>
+                She is a skilled cat groomer. With her gentle touch and
+                expertise, she makes grooming a stress-free experience for cats.
+              </p>
+            </div>
+            <div class="employe">
+              <div class="empl-cont-img">
+                <img src="./img/team-Jack.jpg" alt="Jack" />
+              </div>
+              <h3 class="py-3">Jack</h3>
+              <p>
+                The main “culprit” of the creation of this place and also the
+                guardian of order inside its walls!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-<!-- Contact us -->
-<footer class="footer py-5">
-    <div class="container text-md-start text-center">
-      <div class="row">
-        <!-- Logo en Over Ons -->
-        <div class="col-md-4 mb-4">
-          <h5 class="text-uppercase">The Cozy Cat</h5>
-          <p>Providing top-notch care and comfort for your furry friends while you're away.</p>
+    <!-- Contact us -->
+    <footer class="footer pt-5">
+      <div class="container text-md-start text-center">
+        <div class="row">
+          <!-- Logo en Over Ons -->
+          <div class="col-md-4 mb-4">
+            <h5>The Cozy Cat</h5>
+            <p>
+              Providing top-notch care and comfort for your furry friends while
+              you're away.
+            </p>
+          </div>
+          <!-- Quick Links -->
+          <div class="col-md-4 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#service" class="footer-link">Services</a></li>
+              <li><a href="#team" class="footer-link">Team</a></li>
+            </ul>
+          </div>
+          <!-- Contactformulier -->
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <form id="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label mb-1">Name</label>
+                <input
+                  type="text"
+                  class="form-control shadow-sm"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label mb-1">Email</label>
+                <input
+                  type="email"
+                  class="form-control shadow-sm"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label mb-1">Message</label>
+                <textarea
+                  class="form-control shadow-sm"
+                  id="message"
+                  rows="3"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                id="submitReservation"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
-  
-        <!-- Quick Links -->
-        <div class="col-md-4 mb-4">
-          <h5 class="text-uppercase">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#service" class="footer-link">Services</a></li>
-            <li><a href="#team" class="footer-link">Team</a></li>
-            <li><a href="#contacts" class="footer-link">Contact Us</a></li>
-          </ul>
-        </div>
-  
-        <!-- Contactformulier -->
-        <div class="col-md-4">
-          <h5 class="text-uppercase">Contact Us</h5>
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control shadow-sm" id="name" placeholder="Your Name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control shadow-sm" id="email" placeholder="Your Email">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control shadow-sm" id="message" rows="3" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-warning w-100 btn-send" data-bs-toggle="modal" data-bs-target="#messageModal">Send</button>
-          </form>
+        <!-- Copyright -->
+        <div class="text-center py-4">
+          <span>© 2024 The Cozy Cat. All Rights Reserved.</span>
         </div>
       </div>
-  
-      <!-- Copyright -->
-      <div class="text-center pt-4">
-        <span>© 2024 The Cozy Cat. All Rights Reserved.</span>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Reservation Form</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
+    <!-- Modals -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Reservation Form
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
             <form id="reservationForm">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" >
+                <input
+                  type="text"
+                  class="form-control shadow-sm"
+                  id="name"
+                  placeholder="Your Name"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" >
+                <input
+                  type="email"
+                  class="form-control shadow-sm"
+                  id="email"
+                  placeholder="Your Email"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="date" class="form-label">Date of Stay</label>
-                <input type="date" id="date" name="date" class="form-control" >
+                <input type="date" id="date" name="date" class="form-control" />
               </div>
-              <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmModal">Submit</button>
+              <button
+                type="submit"
+                class="btn btn-primary btn-send"
+                id="submitReservation"
+              >
+                Submit
+              </button>
             </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Info</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
+    <div
+      class="modal fade"
+      id="confirmModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Info</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
             <p>Thank you! Your reservation has been submitted.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Message</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
+    <div
+      class="modal fade"
+      id="messageModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Message</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
             <p>Thank you! Your message has been successfully sent.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="./javascript/script.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
