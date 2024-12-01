@@ -1,28 +1,43 @@
-const employees = document.querySelectorAll('.employe');
+const reservationForm = document.getElementById("reservation-form");
+const contactForm = document.getElementById("contact-form");
 
-employees.forEach(employee => {
-  employee.addEventListener('mouseover',  () => {
-    employee.style.backgroundColor = 'rgb(159, 104, 231, 0.5)'; // Nieuwe achtergrondkleur
-    let text = employee.querySelectorAll('p'); // Selecteer alle <p> binnen deze employee
-    text.forEach(p => p.style.color = 'white');
-    let h3 = employee.querySelectorAll('h3');
-    h3.forEach(h => h.style.color = 'white');
-  });
+reservationForm.addEventListener("submit", handleFormReservationSubmit);
+contactForm.addEventListener("submit", handleFormContactSubmit);
 
-  employee.addEventListener('mouseout',  () => {
-    employee.style.backgroundColor = ''; // Reset naar oorspronkelijke kleur
-    const text = employee.querySelectorAll('p'); // Selecteer opnieuw de <p>-elementen
-    text.forEach(p => p.style.color = '')
-    let h3 = employee.querySelectorAll('h3');
-    h3.forEach(h => h.style.color = '');
-  });
-});
+function handleFormReservationSubmit(event) {
+  event.preventDefault();
 
+  if (!reservationForm.checkValidity()) {
+    return;
+  }
 
-const buttonSend = document.querySelector('.btn-send')
+  const currentModalId = "reservationModal";
+  const nextModalId = "confirmModal";
 
-function showMessage(event) {
-  event.preventDefault()
+  const currentModal = document.getElementById(currentModalId);
+  const bootstrapModal = bootstrap.Modal.getInstance(currentModal);
+
+  const nextModal = document.getElementById(nextModalId);
+  const nextBootstrapModal = new bootstrap.Modal(nextModal);
+
+  bootstrapModal.hide();
+  nextBootstrapModal.show();
+  reservationForm.reset();
 }
 
-buttonSend.addEventListener('click', showMessage)
+function handleFormContactSubmit(event) {
+  event.preventDefault();
+
+  if (!contactForm.checkValidity()) {
+    return;
+  }
+  const messageId = "messageModal";
+  const bootstrapMessageModal = document.getElementById(messageId);
+
+  const messageModal = new bootstrap.Modal(bootstrapMessageModal);
+
+  messageModal.show();
+  contactForm.reset();
+}
+
+
